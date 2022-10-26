@@ -1,0 +1,158 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+body {
+     background-image: url("./assets/background-main.jpg");
+  background-attachment: fixed;
+}
+.container {
+    height: 100%;
+    object-fit: cover;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(auto-fill, 50px));
+    grid-template-rows: 1fr;
+}
+
+.item-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    gap: 15px;
+}
+
+.information {
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 250px;
+    gap: 8px;
+}
+
+.information .cellphone {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.information .street {
+    font-weight: bold;
+    font-size: 15px;
+}
+.social-media{
+    display: flex;
+    gap: 25px;
+}
+
+.social-media > a > i{
+    color: #fff;
+    font-size: 45px;
+}
+
+.item-menu{
+    width: 100%;
+    margin: 25px 0;
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    grid-gap: 50px;
+    justify-content: center;
+}
+
+.type-food {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.type-food span:nth-child(1) {
+    color: #fff;
+}
+
+.type-food span:nth-child(2) {
+    color: #eb4217;
+}
+
+.foods {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.item-food {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.name-price-food {
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+
+.name-food {
+    font-weight: bold;
+}
+
+.price-food {
+    font-weight: bold;
+}
+
+.description-food {
+    color: #fff;
+    font-size: 12px;
+}
+
+footer {
+    background-color: #eb4217;
+    text-align: center;
+    font-size: 12px;
+    padding: 8px 0;
+}
+
+footer > span {
+    color: #fff;
+}
+
+footer > span > a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .item-menu{
+        grid-template-columns: repeat(1, 300px);
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .item-menu{
+        grid-template-columns: repeat(1, 300px);
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .item-menu{
+        grid-template-columns: repeat(1, 300px);
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .item-menu{
+        grid-template-columns: repeat(2, 300px);
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .item-menu{
+        grid-template-columns: repeat(3, 300px);
+    }
+}
