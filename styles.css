@@ -24,6 +24,10 @@ body {
     gap: 15px;
 }
 
+.item-left .logo > img{
+    width: 250px;
+}
+
 .information {
     color: #fff;
     display: flex;
@@ -111,6 +115,7 @@ footer {
     text-align: center;
     font-size: 12px;
     padding: 8px 0;
+    width: 100%;
 }
 
 footer > span {
